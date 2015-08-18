@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html data-ng-app="PetStore">
+  <head>
+    <title>
+      Karma tests the has code coverage Report
+    </title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+  </head>
+  <body>
+    <section class="container" data-ng-controller="mainController">
+      <h1> Online Pet Store</h1>
+      <section class="panel">
+        <button class="btn btn-primary" data-ng-click="getData()">Get Pet Details</button>
+        <br />
+        <ul data-ng-if="pets" style="list-style:none;">
+          <li data-ng-repeat="pet in pets"/>
+            <span class="col-xs-6" data-ng-bind="pet.breed"></span>
+            <span class="col-xs-6"><button data-ng-click="buy(pet)" class="btn btn-warning">Buy this pet</button></span>
+          </li>  
+              
+        </ul>
+      </section>
+    </section>
+      
+  </body>
+  <script type="text/javascript" src="lib/angular.js"></script>
+  <script type="text/javascript" src="lib/angular-mocks.js"></script>
+  <script type="text/javascript" src="src/app.js"></script>
+</html>

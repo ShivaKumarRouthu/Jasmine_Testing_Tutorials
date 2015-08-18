@@ -1,0 +1,18 @@
+{
+  "name": "karma_jasmine",
+  "version": "1.0.0",
+  "description": "test angular app with jasmine framework using karma",
+  "main": "karma.conf.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "shiva kumar routhu",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine-core": "^2.3.4",
+    "karma": "^0.13.9",
+    "karma-chrome-launcher": "^0.2.0",
+    "karma-coverage": "^0.5.0",
+    "karma-jasmine": "^0.3.6"
+  }
+}
